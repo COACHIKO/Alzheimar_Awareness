@@ -1,16 +1,12 @@
-import 'package:alzaware/features/authentication/screens/onboarding/widgets/circular%20button.dart';
-import 'package:alzaware/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:alzaware/features/authentication/screens/onboarding/widgets/onboarding_skipbutton.dart';
-import 'package:alzaware/features/authentication/screens/onboarding/widgets/onboarding_smooth_indicator.dart';
+import 'package:alzaware/view/screens/authentication/screens/onboarding/widgets/circular%20button.dart';
+import 'package:alzaware/view/screens/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:alzaware/view/screens/authentication/screens/onboarding/widgets/onboarding_skipbutton.dart';
+import 'package:alzaware/view/screens/authentication/screens/onboarding/widgets/onboarding_smooth_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/image_strings.dart';
-import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/constants/text_strings.dart';
-import '../../../../utils/helpers/helper_functions.dart';
+import '../../../../../utils/constants/image_strings.dart';
+import '../../../../../utils/constants/text_strings.dart';
 import '../../controllers.onboarding/onboarding.controller.dart';
 
 class OnboardingScreen extends StatelessWidget {
