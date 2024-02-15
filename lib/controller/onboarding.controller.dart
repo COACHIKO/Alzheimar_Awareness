@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-
-import '../screens/login/login_page.dart';
-
+import '../view/screens/authentication/login/login_page.dart';
 class Onboardingcontroller extends GetxController{
   static Onboardingcontroller get instance =>Get.find();
 final pageController = PageController();
@@ -10,8 +8,7 @@ final pageController = PageController();
   void updatePageIndicator(index)=>currentPageIndex.value=index;
   void dotNavigationClick(index){
     currentPageIndex.value=index;
-    pageController.jumpToPage(index);
-  }
+    pageController.jumpToPage(index);}
   void nextpage(){
     if(currentPageIndex.value==2){
       Get.offAll(const LoginPage());

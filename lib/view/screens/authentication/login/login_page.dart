@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../../../common/styles/spacing_styles.dart';
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/image_strings.dart';
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/text_strings.dart';
-import '../../../../../utils/helpers/helper_functions.dart';
+import '../../../../../core/common/styles/spacing_styles.dart';
+import '../../../../../core/utils/constants/colors.dart';
+import '../../../../../core/utils/constants/image_strings.dart';
+import '../../../../../core/utils/constants/sizes.dart';
+import '../../../../../core/utils/constants/text_strings.dart';
+import '../../../../../core/utils/helpers/helper_functions.dart';
 import '../password_configiration/forget_password.dart';
 import '../signup/sign_up.dart';
 
@@ -59,9 +59,9 @@ class LoginPageState extends State<LoginPage> {
                   padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
                   child: Column(
                     children: [
-                      /// Email TEXTFORMFIELD
+                      /// SSN TEXTFORMFIELD
                       TextFormField(
-                        decoration: const InputDecoration(
+                        decoration:  InputDecoration(
                           prefixIcon: Icon(Iconsax.card),
                           labelText: TTexts.ssn,
                         ),
@@ -101,14 +101,14 @@ class LoginPageState extends State<LoginPage> {
                                   });
                                 },
                               ),
-                              const Text(TTexts.rememberMe),
+                               Text(TTexts.rememberMe),
                             ],
                           ),
 
                           /// Forget Password
                           TextButton(
                             onPressed: () {Get.to(const ForgetPassword());},
-                            child: const Text(TTexts.forgetPassword),
+                            child:  Text(TTexts.forgetPassword),
                           ),
                         ],
                       ),
@@ -120,7 +120,7 @@ class LoginPageState extends State<LoginPage> {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {},
-                          child: const Text(TTexts.signIn),
+                          child:  Text(TTexts.signIn),
                         ),
                       ),
 
@@ -132,7 +132,7 @@ class LoginPageState extends State<LoginPage> {
                           onPressed: () {
                             Get.to(const SignUp());
                           },
-                          child: const Text(TTexts.createAccount),
+                          child:   Text(TTexts.createAccount),
                         ),
                       ),
                     ],

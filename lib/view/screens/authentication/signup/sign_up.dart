@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/image_strings.dart';
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/text_strings.dart';
-import '../../../../../utils/helpers/helper_functions.dart';
-
-
+import '../../../../../core/utils/constants/colors.dart';
+import '../../../../../core/utils/constants/image_strings.dart';
+import '../../../../../core/utils/constants/sizes.dart';
+import '../../../../../core/utils/constants/text_strings.dart';
+import '../../../../../core/utils/helpers/helper_functions.dart';
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
 
@@ -44,7 +42,7 @@ class SignUpState extends State<SignUp> {
                   children: [
                     TextFormField(
                       expands: false,
-                      decoration: const InputDecoration(
+                      decoration:  InputDecoration(
                         labelText: TTexts.username,
                         prefixIcon: Icon(Iconsax.user),
                       ),
@@ -52,7 +50,7 @@ class SignUpState extends State<SignUp> {
                     const SizedBox(height: TSizes.spaceBtwInputFields),
                     TextFormField(
                       expands: false,
-                      decoration: const InputDecoration(
+                      decoration:  InputDecoration(
                         labelText: TTexts.ssn,
                         prefixIcon: Icon(Iconsax.card),
                       ),
@@ -60,7 +58,7 @@ class SignUpState extends State<SignUp> {
                     const SizedBox(height: TSizes.spaceBtwInputFields),
                     TextFormField(
                       expands: false,
-                      decoration: const InputDecoration(
+                      decoration:  InputDecoration(
                         labelText: TTexts.email,
                         prefixIcon: Icon(Icons.email_outlined),
                       ),
@@ -172,7 +170,7 @@ class SignUpState extends State<SignUp> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text(TTexts.createAccount),
+                  child:   Text(TTexts.createAccount),
                 ),
               ),
               const SizedBox(height: TSizes.spaceBtwSections),

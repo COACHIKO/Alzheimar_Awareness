@@ -1,11 +1,9 @@
- import 'package:alzaware/view/screens/authentication/screens/password_configiration/reset_password.dart';
+import 'package:alzaware/view/screens/authentication/password_configiration/reset_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/text_strings.dart';
-
-
+import '../../../../../core/utils/constants/sizes.dart';
+import '../../../../../core/utils/constants/text_strings.dart';
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
 
@@ -21,12 +19,12 @@ class ForgetPassword extends StatelessWidget {
         const SizedBox(height: TSizes.spaceBtwItems*2,),
 
         /// TEXTFORMFIELD
-        TextFormField(decoration: const InputDecoration(labelText: TTexts.email,prefixIcon: Icon(Iconsax.direct_right)),),
+        TextFormField(decoration:  InputDecoration(labelText: TTexts.email,prefixIcon: Icon(Iconsax.direct_right)),),
 
 /// SUBMIT
         const SizedBox(height: TSizes.spaceBtwSections,),
 
-        SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){Get.off(const ResetPassword());}, child: const Text(TTexts.submit))),
+        SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){Get.off(const ResetPassword());}, child: Text(TTexts.submit))),
 
       ],),),);
   }
