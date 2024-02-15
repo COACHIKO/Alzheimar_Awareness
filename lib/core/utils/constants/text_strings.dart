@@ -33,39 +33,30 @@ class TTexts {
   static  String rememberMe = "rememberMe".tr;
   static  String forgetPassword = "forgetPassword".tr;
   static  String signIn = "signin".tr;
+  static  String createAccount = "createAccount".tr;
+  static  String orSignInWith = "orSignInWith".tr;
+  static  String orSignUpWith = "orSignUpWith".tr;
 
-  static   String createAccount = "createAccount".tr;
-  static   String orSignInWith = "orSignInWith".tr;
-  static   String orSignUpWith = "orSignUpWith".tr;
-  static   String iAgreeTo = "I agree to".tr;
-  static   String privacyPolicy = "Privacy Policy".tr;
-  static   String termsOfUse = "Terms of use".tr;
-  static   String verificationCode = "verificationCode".tr;
-  static   String resendEmail = "Resend Email".tr;
-  static   String resendEmailIn = "Resend email in".tr;
-
-
+  static  String iAgreeTo = "iAgreeTo".tr;
+  static  String privacyPolicy = "Privacy Policy".tr;
+  static  String termsOfUse = "Terms of use".tr;
+  static  String verificationCode = "verificationCode".tr;
+  static  String resendEmail = "Resend Email".tr;
+  static  String resendEmailIn = "Resend email in".tr;
   // -- Authentication Headings
-  static const String loginTitle = "Welcome";
-  static const String loginSubTitle = "As long as you're here, you're safe";
-  static const String signupTitle = "Let’s create your account";
-  static const String forgetPasswordTitle = "Forget password";
-  static const String forgetPasswordSubTitle = "Don’t worry sometimes people can forget too, enter your email and we will send you a password reset link.";
-  static const String changeYourPasswordTitle = "Password Reset Email Sent";
-  static const String changeYourPasswordSubTitle = "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
-  static const String confirmEmail = "Verify your email address!";
-  static const String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
-  static const String emailNotReceivedMessage = "Didn’t get the email? Check your junk/spam or resend it.";
-  static const String yourAccountCreatedTitle = "Your account successfully created!";
-  static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
+  static  String loginTitle = "Welcome";
+  static  String loginSubTitle = "As long as you're here, you're safe";
+  static  String signupTitle = "Let’s create your account";
+  static  String forgetPasswordTitle = "Forget password";
+  static  String forgetPasswordSubTitle = "Don’t worry sometimes people can forget too, enter your email and we will send you a password reset link.";
+  static  String changeYourPasswordTitle = "Password Reset Email Sent";
+  static  String changeYourPasswordSubTitle = "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
+  static  String confirmEmail = "Verify your email address!";
+  static  String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
+  static  String emailNotReceivedMessage = "Didn’t get the email? Check your junk/spam or resend it.";
+  static  String yourAccountCreatedTitle = "Your account successfully created!";
+  static  String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
 
-
-  // -- Product
-  static const String popularProducts = "Popular Products";
-
-  // -- Home
-  static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Taimoor Sikander";
 
 
 }
