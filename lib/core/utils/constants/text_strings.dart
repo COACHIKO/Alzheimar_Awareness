@@ -28,7 +28,7 @@ class TTexts {
   static  String password = "password".tr;
   static  String confirmpassword = "confirmpassword".tr;
   static  String newPassword = "New Password".tr;
-  static  String username = "Username".tr;
+  static  String username = "username".tr;
   static  String phoneNo = "Phone Number".tr;
   static  String rememberMe = "rememberMe".tr;
   static  String forgetPassword = "forgetPassword".tr;
@@ -36,12 +36,12 @@ class TTexts {
   static  String createAccount = "createAccount".tr;
   static  String orSignInWith = "orSignInWith".tr;
   static  String orSignUpWith = "orSignUpWith".tr;
-
   static  String iAgreeTo = "iAgreeTo".tr;
-  static  String privacyPolicy = "Privacy Policy".tr;
-  static  String termsOfUse = "Terms of use".tr;
+  static  String privacyPolicy = "privacyPolicy".tr;
+
+  static  String termsOfUse = "termsOfUse".tr;
   static  String verificationCode = "verificationCode".tr;
-  static  String resendEmail = "Resend Email".tr;
+  static  String resendEmail = "resendEmail".tr;
   static  String resendEmailIn = "Resend email in".tr;
   // -- Authentication Headings
   static  String loginTitle = "Welcome";

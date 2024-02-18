@@ -1,5 +1,8 @@
 import 'package:alzaware/view/screens/authentication/login/login_page.dart';
 import 'package:alzaware/view/screens/authentication/signup/sign_up.dart';
+import 'package:alzaware/view/screens/home_screen.dart';
+import 'package:alzaware/view/screens/navigation_menu/navigation_menu.dart';
+import 'package:alzaware/view/screens/normal_user_area/detect_alzheimar.dart';
 import 'package:alzaware/view/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -43,6 +46,8 @@ final  LocaleController langController = Get.put(LocaleController());
               "/onboarding":(context)=> const OnboardingScreen(),
               "/login":(context)=> const LoginPage(),
               "/signup":(context)=> const SignUp(),
+              "/alzheimerdetection":(context)=>   const AlzheimerDetection(),
+              "/homeScreen":(context)=>   const NavigationMenu(),
             },
             debugShowCheckedModeBanner: false,
           );

@@ -22,7 +22,7 @@ class SignUpState extends State<SignUp> {
     var dark = THelperFunctions.isDarkMode(context);
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(iconTheme: IconThemeData(color:dark? Colors.white:Colors.black, ),),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 22,vertical: 8),

@@ -1,3 +1,4 @@
+import 'package:alzaware/view/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -8,7 +9,6 @@ import '../../../../../core/utils/constants/sizes.dart';
 import '../../../../../core/utils/constants/text_strings.dart';
 import '../../../../../core/utils/helpers/helper_functions.dart';
 import '../password_configiration/forget_password.dart';
-import '../signup/sign_up.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -62,7 +62,7 @@ class LoginPageState extends State<LoginPage> {
                       /// SSN TEXTFORMFIELD
                       TextFormField(
                         decoration:  InputDecoration(
-                          prefixIcon: Icon(Iconsax.card),
+                          prefixIcon: const Icon(Iconsax.card),
                           labelText: TTexts.ssn,
                         ),
                       ),
@@ -119,7 +119,10 @@ class LoginPageState extends State<LoginPage> {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+
+                            Get.offAllNamed("/homeScreen");
+                           },
                           child:  Text(TTexts.signIn),
                         ),
                       ),
@@ -130,7 +133,7 @@ class LoginPageState extends State<LoginPage> {
                         width: double.infinity,
                         child: OutlinedButton(
                           onPressed: () {
-                            Get.to(const SignUp());
+                            Get.toNamed("/signup");
                           },
                           child:   Text(TTexts.createAccount),
                         ),

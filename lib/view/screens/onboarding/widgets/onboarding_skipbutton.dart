@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../../../controller/onboarding.controller.dart';
+import '../../../../controller/onboarding_controller.dart';
+import '../../../../core/localization/changelocal.dart';
 import '../../../../core/utils/constants/sizes.dart';
 import '../../../../core/utils/constants/text_strings.dart';
 import '../../../../core/utils/device/device_utility.dart';
@@ -9,9 +10,12 @@ class OnboardingSkipButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var isArabic = LocaleController().language == const Locale("ar");
+
     return Positioned(
       top: TDeviceUtils.getAppBarHeight(),
-      left: TSizes.defaultSpace, // Align the button to the left with the same padding
+      right: isArabic ? null : TSizes.defaultSpace, // If Arabic, set left to null (default position)
+      left: isArabic ? TSizes.defaultSpace : null, // If not Arabic, set right to null (default position)
       child: TextButton(
         onPressed: () {
           Onboardingcontroller.instance.skipPage();

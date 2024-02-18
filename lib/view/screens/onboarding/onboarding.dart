@@ -4,7 +4,7 @@ import 'package:alzaware/view/screens/onboarding/widgets/onboarding_skipbutton.d
 import 'package:alzaware/view/screens/onboarding/widgets/onboarding_smooth_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../controller/onboarding.controller.dart';
+import '../../../../../controller/onboarding_controller.dart';
 import '../../../core/utils/constants/image_strings.dart';
 import '../../../core/utils/constants/text_strings.dart';
 
