@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/utils/constants/colors.dart';
-import '../home_screen.dart';
+import 'custom_shape_border.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool showBackArrow;
@@ -40,9 +40,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: TColors.primary,
       shape: CustomShapeBorder(), // Use your custom shape border here
       title: Text(
-        title,
-        style: const TextStyle(color: TColors.white),
-      ),
+        title,style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.white)),
     );
   }
 

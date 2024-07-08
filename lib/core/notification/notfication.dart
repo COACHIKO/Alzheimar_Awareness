@@ -1,7 +1,6 @@
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 
-
 class NotificationService {
   static Future<void> initializeNotification() async {
     await AwesomeNotifications().initialize(
@@ -28,17 +27,14 @@ class NotificationService {
         )
       ],
       debug: true,
-
     );
-
     await AwesomeNotifications().isNotificationAllowed().then(
-          (isAllowed) async {
+      (isAllowed) async {
         if (!isAllowed) {
           await AwesomeNotifications().requestPermissionToSendNotifications();
         }
       },
     );
-
     await AwesomeNotifications().setListeners(
       onActionReceivedMethod: onActionReceivedMethod,
       onNotificationCreatedMethod: onNotificationCreatedMethod,
@@ -51,8 +47,6 @@ class NotificationService {
   static Future<void> onNotificationCreatedMethod(
       ReceivedNotification receivedNotification) async {
     debugPrint('onNotificationCreatedMethod');
-
-
   }
 
   /// Use this method to detect every time that a new notification is displayed
@@ -71,60 +65,6 @@ class NotificationService {
   static Future<void> onActionReceivedMethod(
       ReceivedAction receivedAction) async {
     debugPrint('onActionReceivedMethod');
-    if (receivedAction.buttonKeyPressed == "add30sec") {
-      Future.delayed(Duration(seconds: 30.toInt()), () async{
-//i=30;
-      showNotification(title: "You Have To keep Going Bro", body: "Dont Forget Your Dream , You Had A Big Rest",
-          actionButtons: [
-       NotificationActionButton(key: "more15", label: "More 15 Sec"),
-       NotificationActionButton(key: "last30", label: "More 30 Sec"),
-       NotificationActionButton(key: "Go", label: "Go Now !"),
-     ]);
-      });
-    }else if(receivedAction.buttonKeyPressed == "add60sec"){
-      Future.delayed(Duration(seconds: 30.toInt()), () async{
-       // i=30;
-
-        showNotification(title: "You Have To keep Going Bro", body: "Dont Forget Your Dream, You Had A Huge Rest, Go OFF!",);
-
-      });
-
-
-    }else if(receivedAction.buttonKeyPressed == "add30sec"){
-      Future.delayed(Duration(seconds: 30.toInt()), () async{
-       // i=30;
-
-
-      showNotification(title: "You Have To keep Going Bro", body: "Dont Forget Your Dream , You Had A Big Rest",
-          actionButtons: [
-          NotificationActionButton(key: "last15", label: "More 15 Sec"),
-          NotificationActionButton(key: "Go", label: "Go Now !"),
-        ]);
-      });
-
-
-
-    }else if(receivedAction.buttonKeyPressed == "last30"){
-      Future.delayed(Duration(seconds: 30.toInt()), () async{
-      //  i=30;
-
-        showNotification(title: "You Have To keep Going Bro", body: "Dont Forget Your Dream, You Had A Huge Rest, Go OFF!",);
-
-      });
-
-
-    }else if (receivedAction.buttonKeyPressed == "last15"){
-      Future.delayed(Duration(seconds: 15.toInt()), () async{
-       // i=15;
-
-        showNotification(title: "You Have To keep Going Bro", body: "Dont Forget Your Dream, You Had A Huge Rest, Go OFF!",);
-      });
-
-
-    }
-
-
-
   }
 
   static Future<void> showNotification({
@@ -158,27 +98,12 @@ class NotificationService {
       actionButtons: actionButtons,
       schedule: scheduled
           ? NotificationInterval(
-        interval: interval,
-        timeZone:
-        await AwesomeNotifications().getLocalTimeZoneIdentifier(),
-        preciseAlarm: true,
-      )
+              interval: interval,
+              timeZone:
+                  await AwesomeNotifications().getLocalTimeZoneIdentifier(),
+              preciseAlarm: true,
+            )
           : null,
     );
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

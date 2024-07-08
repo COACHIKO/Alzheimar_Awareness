@@ -14,8 +14,8 @@ class OnboardingSkipButton extends StatelessWidget {
 
     return Positioned(
       top: TDeviceUtils.getAppBarHeight(),
-      right: isArabic ? null : TSizes.defaultSpace, // If Arabic, set left to null (default position)
-      left: isArabic ? TSizes.defaultSpace : null, // If not Arabic, set right to null (default position)
+      left: isArabic ? null : TSizes.defaultSpace, // If Arabic, set left to null (default position)
+      right: isArabic ? TSizes.defaultSpace : null, // If not Arabic, set right to null (default position)
       child: TextButton(
         onPressed: () {
           Onboardingcontroller.instance.skipPage();

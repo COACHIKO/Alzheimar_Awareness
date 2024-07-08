@@ -12,7 +12,7 @@ class TTextFormFieldTheme {
     // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeMd, color: TColors.black),
     hintStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeSm, color: TColors.black),
-    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal,),
     floatingLabelStyle: const TextStyle().copyWith(color: TColors.black.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
@@ -28,11 +28,11 @@ class TTextFormFieldTheme {
     ),
     errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.warning),
+      borderSide: const BorderSide(width: 1, color: TColors.error),
     ),
     focusedErrorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 2, color: TColors.warning),
+      borderSide: const BorderSide(width: 2, color: TColors.error),
     ),
   );
 
@@ -58,11 +58,11 @@ class TTextFormFieldTheme {
     ),
     errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.warning),
+      borderSide: const BorderSide(width: 1, color: TColors.error),
     ),
     focusedErrorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 2, color: TColors.warning),
+      borderSide: const BorderSide(width: 2, color: TColors.error),
     ),
   );
 }
